@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Source+Sans+Pro:wght@600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: steelblue;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container{
+    background-color: rgba(0,0,0,0.4);
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+.container h1{
+    text-align: center;
+   margin-bottom: 30px;
+}
+.container a{
+    text-decoration: none;
+    color: lightblue;
+}
+.btn{
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    margin: 20px 0;
+    background-color: lightblue;
+    font-family: inherit;
+    font-size: 16px;
+}
+.btn:focus{
+    outline: 0;
+}
+.btn:active{
+    transform: scale(0.98);
+}
+.form-control{
+    position: relative;
+    margin: 20px 0 40px;
+}
+.form-control input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    display: block;
+    padding: 15px 0;
+    color: #fff;
+    font-size: 19px;
+}
+.form-control input:focus, 
+.form-control input:valid{
+    outline: 0;
+    border-bottom-color: lightblue ;
+   
+}
+.form-control label{
+    position: absolute;
+    top:15px;
+    left: 0;
+    color: #fff;
+}
+.form-control label span{
+    display: inline-block;
+    min-width: 5px;
+    transition: transform 0.3s ease-in;
+}
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+    color: lightblue;
+    transform: translateY(-30px);
+}
