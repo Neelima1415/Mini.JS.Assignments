@@ -24,7 +24,6 @@ html.dark {
 }
 
 body {
-  background-color: rgb(207, 205, 205);
   font-family: 'Heebo', sans-serif;
   display: flex;
   align-items: center;
