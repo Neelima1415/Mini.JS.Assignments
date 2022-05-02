@@ -51,6 +51,7 @@ body {
     overflow: hidden; 
     width: 400px;
     margin: 60px;  
+    padding: 0;
   }
 
   .card-header {
