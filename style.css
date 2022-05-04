@@ -36,7 +36,6 @@ h1 {
 img {
   max-width: 100%;
   margin: 0px;
-  
   position: relative;  
   display: flex;
   margin: auto;
@@ -55,24 +54,29 @@ img {
   overflow: hidden; 
   width: 400px;
   margin: 60px;  
+  padding: 0;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card-header {
-  height: 500%;
+  height: 200%;
   overflow: hidden;
   width: 100%;
   margin: auto;
   
 }
 
+
 .card-header img {
   object-fit: cover; 
-  height: 500%;
+  height: 800%;
   width: 100%;
   box-sizing: border-box;  
   display: flex; 
   justify-content: space-between; 
-
   
 }
 
@@ -96,6 +100,7 @@ img {
 
 .author {
   display: flex;
+  margin-right: 20px;
 }
 
 .profile-img {
@@ -103,6 +108,16 @@ img {
   overflow: hidden;
   height: 80px;
   width: 80px;
+}
+
+.profile-img1 {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  margin-left: 20px; 
+
 }
 
 .author-info {
@@ -160,7 +175,12 @@ img {
     padding-right: 50px;
 }
 
+
+
 .btn:hover{
 box-shadow: inset 300px 0 0 0 white;
 transition: ease-out 0.3s;
 }  
+
+
+
