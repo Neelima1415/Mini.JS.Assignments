@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz app</title>
+  </head>
+  <body>
+    <div class="Quiz-container">
+      <div class="qa_body">
+        <div class="qa_set active">
+          <h2>Which language runs in a wed browser?</h2>
+          <div class="qa_ans_row">
+            <input type="radio" name="q1" />
+            <span>Java</span>
+          </div>
+
+          <div class="qa_ans_row">
+            <input type="radio" name="q1" />
+            <span>C</span>
+          </div>
+          <div class="qa_ans_row">
+            <input type="radio" name="q1" />
+            <span>Python</span>
+          </div>
+          <div class="qa_ans_row">
+            <input type="radio" name="q1" valid="valid" />
+            <span>Java Script</span>
+          </div>
+        </div>
+
+        <div class="qa_set">
+          <h2>What does CSS stands for?</h2>
+          <div class="qa_ans_row">
+            <input type="radio" name="q2" />
+            <span>Central Style sheets</span>
+          </div>
+
+          <div class="qa_ans_row">
+            <input type="radio" name="q2" valid="valid" />
+            <span>Cascading style sheets</span>
+          </div>
+
+          <div class="qa_ans_row">
+            <input type="radio" name="q2" />
+            <span>Cascading Simple Sheets</span>
+          </div>
+
+          <div class="qa_ans_row">
+            <input type="radio" name="q2" />
+            <span>Cars SUVs Saliboats</span>
+          </div>
+        </div>
+
+        <div class="qa_set">
+          <h2>What tag is used to render an image on a webpage?</h2>
+          <div class="qa_ans_row">
+            <input type="radio" name="q3" valid="valid" />
+            <span> img </span>
+          </div>
+
+          <div class="qa_ans_row">
+            <input type="radio" name="q3" />
+            <span> src </span>
+          </div>
+
+          <div class="qa_ans_row">
+            <input type="radio" name="q3" />
+            <span> image </span>
+          </div>
+
+          <div class="qa_ans_row">
+            <input type="radio" name="q3" />
+            <span> None of the above </span>
+          </div>
+        </div>
+
+        <div class="qa_set">
+          <h2>Which type of JavaScript language is?</h2>
+          <div class="qa_ans_row">
+            <input type="radio" name="q4" />
+            <span>Object-Oriented</span>
+          </div>
+
+          <div class="qa_ans_row">
+            <input type="radio" name="q4" valid="valid" />
+            <span>Object-based</span>
+          </div>
+
+          <div class="qa_ans_row">
+            <input type="radio" name="q4" />
+            <span>Functional programming</span>
+          </div>
+
+          <div class="qa_ans_row">
+            <input type="radio" name="q4" />
+            <span>All of the above</span>
+          </div>
+        </div>
+
+        <div class="qa_set">
+          <h2>The tags in HTML are?</h2>
+          <div class="qa_ans_row">
+            <input type="radio" name="q5" />
+            <span>case-Sensitive</span>
+          </div>
+
+          <div class="qa_ans_row">
+            <input type="radio" name="q5" />
+            <span>in upper case</span>
+          </div>
+
+          <div class="qa_ans_row">
+            <input type="radio" name="q5" valid="valid" />
+            <span>not case case-Sensitive</span>
+          </div>
+
+          <div class="qa_ans_row">
+            <input type="radio" name="q5" />
+            <span>in lowercase</span>
+          </div>
+        </div>
+
+        <div class="qa_set">
+          <span>Score: <span id="score">0</span></span>
+          <h2>Your total score <span id="totalScore">0</span> out of 100</h2>
+        </div>
+      </div>
+
+      <div class="button">
+        <span class="btn1" id="submit">Submit</span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
