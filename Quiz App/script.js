@@ -87,13 +87,18 @@ const getCheckedAnswer = () => {
 
 submit.addEventListener('click', () => {
     const checkedAnswer = getCheckedAnswer();
+    if (!checkedAnswer) {
+        alert("Select Something");
+    }
     console.log(checkedAnswer);
 
     if (checkedAnswer === questions[question_count].ans) {
         score++;
     };
 
-    question_count++;
+    if (checkedAnswer) {
+        question_count++;
+    }
 
     if (question_count < questions.length) {
         loadQuestion();
