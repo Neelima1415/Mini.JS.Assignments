@@ -7,9 +7,7 @@ var scoreCount=0;
 var qaSet = document.querySelectorAll('.qa_set');
 var qaAnsRow = document.querySelectorAll('.qa_set .qa_ans_row input');
 
-submit.addEventListener('click',function(){
-    step();
-})
+
 
 qaAnsRow.forEach( function(qaAnsRowSingle) {
     qaAnsRowSingle.addEventListener('click',function() {
@@ -19,6 +17,7 @@ qaAnsRow.forEach( function(qaAnsRowSingle) {
 
 
         var valid = this.getAttribute("valid");
+
         if(valid == "valid"){
             scoreCount +=20;
             score.innerHTML = scoreCount;
@@ -27,12 +26,12 @@ qaAnsRow.forEach( function(qaAnsRowSingle) {
             scoreCount -=0;
             score.innerHTML = scoreCount;
             totalScore.innerHTML = scoreCount;
-
+           
         }
+
 
  })
   });
-
 
 
 function step() {
@@ -43,6 +42,15 @@ function step() {
 
         qaSet[count].className= 'qa_set active';
         if(count == 5) {
-            submit.style.display = 'none';
+         submit.style.display = 'none';
         }
+           
+        
     }
+    
+function fun() {  
+    location.reload();  
+  }  
+   
+ 
+  
